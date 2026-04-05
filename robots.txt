@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Block access to raw asset source files
+Disallow: /extras/
+
+Sitemap: https://kanguin.com/sitemap.xml

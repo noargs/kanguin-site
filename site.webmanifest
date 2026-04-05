@@ -1,0 +1,13 @@
+{
+  "name": "KanguinPOS — Own Your Food Business",
+  "short_name": "KanguinPOS",
+  "description": "Take full control of your food business. No monthly fees, no per-order charges. Your own ordering website, Android POS and payment integration — one-off cost.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#06091a",
+  "theme_color": "#ff6a00",
+  "icons": [
+    { "src": "/icons/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
