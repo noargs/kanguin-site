@@ -783,6 +783,65 @@ footer {
 .footer-links a { font-size: .82rem; color: rgba(255,255,255,.4); transition: color .2s; }
 .footer-links a:hover { color: #fff; }
 
+/* ── COVERAGE MAP ────────────────────────────────── */
+#coverage { background: var(--navy); }
+#coverage .section-title  { color: #fff; }
+#coverage .section-eyebrow{ color: var(--orange); }
+#coverage .section-sub    { color: rgba(255,255,255,.6); }
+
+.map-wrapper { text-align: center; margin-top: 48px; }
+
+.map-frame {
+  display: inline-block;
+  position: relative;
+  border: 1px solid rgba(255,106,0,.25);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow:
+    0 0 0 1px rgba(255,106,0,.08),
+    0 0 40px rgba(255,106,0,.1),
+    inset 0 0 60px rgba(6,9,26,.6);
+}
+
+.map-frame svg {
+  display: block;
+  width: min(360px, 90vw);
+  height: auto;
+}
+
+/* CRT scanlines overlay */
+.map-scanlines {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 3px,
+    rgba(0,0,0,.12) 3px,
+    rgba(0,0,0,.12) 4px
+  );
+  pointer-events: none;
+  z-index: 2;
+}
+
+.map-legend {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: .82rem;
+  font-weight: 600;
+  color: rgba(255,255,255,.35);
+  margin-top: 16px;
+}
+.map-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--orange);
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 6px var(--orange);
+}
+
 /* ── FLOATING WA ─────────────────────────────────── */
 .wa-float {
   position: fixed;
