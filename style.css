@@ -251,7 +251,7 @@ nav {
 /* ── HERO ────────────────────────────────────────── */
 #hero {
   background: linear-gradient(135deg, var(--navy) 0%, #1a2d6e 100%);
-  padding: 80px 0 0;
+  padding: 40px 0 0;
   overflow: hidden;
   position: relative;
 }
@@ -902,7 +902,7 @@ footer {
 /* ── RESPONSIVE ──────────────────────────────────── */
 @media (max-width: 900px) {
   .hero-inner     { grid-template-columns: 1fr; gap: 40px; }
-  .hero-content   { padding-bottom: 0; }
+  .hero-content   { padding-bottom: 40px; }
   .hero-visual    { display: none; }
   .compare-grid   { grid-template-columns: 1fr; }
   .showcase-grid  { grid-template-columns: 1fr; }
